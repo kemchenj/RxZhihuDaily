@@ -10,6 +10,8 @@ target 'ZhihuDaily' do
   pod 'RxCocoa'
   pod 'RxDataSources'
   pod 'NSObject+Rx'
+  pod 'Kingfisher'
+  pod 'MJRefresh'
 
 end
 

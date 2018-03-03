@@ -13,10 +13,6 @@ import RxCocoa
 protocol ZhihuServiceType {
 
     var baseUrl: URL { get }
-
-//    func latestStories(_ completionHandler: @escaping (News) -> Void)
-//    func stories(before date: String, completionHandler: @escaping (News) -> Void)
-//    func storyDetail(id: Int, completionHandler: @escaping (Story) -> Void)
 }
 
 protocol RxZhihuServiceType {

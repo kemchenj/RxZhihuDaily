@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		52DF6AC94F6C5C9C80284348 /* Pods_ZhihuDaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007C8AF8C6379994C369512F /* Pods_ZhihuDaily.framework */; };
+		C824C6B2203493CB00C3EF91 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6B1203493CB00C3EF91 /* StoryCell.swift */; };
+		C824C6B42034946B00C3EF91 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6B32034946B00C3EF91 /* NewsViewModel.swift */; };
+		C824C6B6203494DE00C3EF91 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6B5203494DE00C3EF91 /* BindableType.swift */; };
+		C824C6BC203495EE00C3EF91 /* Scene+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6B7203495EE00C3EF91 /* Scene+ViewController.swift */; };
+		C824C6BD203495EE00C3EF91 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6B8203495EE00C3EF91 /* SceneTransitionType.swift */; };
+		C824C6BE203495EE00C3EF91 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6B9203495EE00C3EF91 /* Scene.swift */; };
+		C824C6BF203495EE00C3EF91 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6BA203495EE00C3EF91 /* SceneCoordinator.swift */; };
+		C824C6C0203495EE00C3EF91 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6BB203495EE00C3EF91 /* SceneCoordinatorType.swift */; };
+		C824C6C2203496CD00C3EF91 /* StoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6C1203496CD00C3EF91 /* StoryViewModel.swift */; };
 		C8646009202F2B9000167F51 /* ZhihuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8646008202F2B9000167F51 /* ZhihuService.swift */; };
 		C8800E42202EB97D00DA0961 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8800E41202EB97D00DA0961 /* Story.swift */; };
 		C8800E44202EB9D700DA0961 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8800E43202EB9D700DA0961 /* News.swift */; };
 		C8D7B33D202DF409006C8753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D7B33C202DF409006C8753 /* AppDelegate.swift */; };
-		C8D7B33F202DF409006C8753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D7B33E202DF409006C8753 /* ViewController.swift */; };
+		C8D7B33F202DF409006C8753 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D7B33E202DF409006C8753 /* NewsVC.swift */; };
 		C8D7B342202DF409006C8753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D7B340202DF409006C8753 /* Main.storyboard */; };
 		C8D7B344202DF40A006C8753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D7B343202DF40A006C8753 /* Assets.xcassets */; };
 		C8D7B347202DF40A006C8753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D7B345202DF40A006C8753 /* LaunchScreen.storyboard */; };
@@ -22,12 +31,21 @@
 		007C8AF8C6379994C369512F /* Pods_ZhihuDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhihuDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		589E95F69A0FAFEF62EE828F /* Pods-ZhihuDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhihuDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily.debug.xcconfig"; sourceTree = "<group>"; };
 		630279775451EF43BCF15853 /* Pods-ZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
+		C824C6B1203493CB00C3EF91 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		C824C6B32034946B00C3EF91 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		C824C6B5203494DE00C3EF91 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		C824C6B7203495EE00C3EF91 /* Scene+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scene+ViewController.swift"; sourceTree = "<group>"; };
+		C824C6B8203495EE00C3EF91 /* SceneTransitionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneTransitionType.swift; sourceTree = "<group>"; };
+		C824C6B9203495EE00C3EF91 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		C824C6BA203495EE00C3EF91 /* SceneCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		C824C6BB203495EE00C3EF91 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
+		C824C6C1203496CD00C3EF91 /* StoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
 		C8646008202F2B9000167F51 /* ZhihuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhihuService.swift; sourceTree = "<group>"; };
 		C8800E41202EB97D00DA0961 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		C8800E43202EB9D700DA0961 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		C8D7B339202DF409006C8753 /* ZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D7B33C202DF409006C8753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C8D7B33E202DF409006C8753 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8D7B33E202DF409006C8753 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		C8D7B341202DF409006C8753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8D7B343202DF40A006C8753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8D7B346202DF40A006C8753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +81,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C8AB07D5204AD79500C484DC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C8D7B330202DF409006C8753 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +109,13 @@
 		C8D7B33B202DF409006C8753 /* ZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				C8D7B351202DF803006C8753 /* Scene */,
+				C8D7B354202DF852006C8753 /* View */,
+				C8D7B352202DF80A006C8753 /* Controller */,
 				C8D7B353202DF816006C8753 /* Services */,
 				C8D7B350202DF778006C8753 /* Model */,
+				C8AB07D5204AD79500C484DC /* Extension */,
 				C8D7B33C202DF409006C8753 /* AppDelegate.swift */,
-				C8D7B33E202DF409006C8753 /* ViewController.swift */,
 				C8D7B340202DF409006C8753 /* Main.storyboard */,
 				C8D7B343202DF40A006C8753 /* Assets.xcassets */,
 				C8D7B345202DF40A006C8753 /* LaunchScreen.storyboard */,
@@ -101,8 +129,29 @@
 			children = (
 				C8800E41202EB97D00DA0961 /* Story.swift */,
 				C8800E43202EB9D700DA0961 /* News.swift */,
+				C824C6B5203494DE00C3EF91 /* BindableType.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C8D7B351202DF803006C8753 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C824C6B9203495EE00C3EF91 /* Scene.swift */,
+				C824C6BB203495EE00C3EF91 /* SceneCoordinatorType.swift */,
+				C824C6BA203495EE00C3EF91 /* SceneCoordinator.swift */,
+				C824C6B7203495EE00C3EF91 /* Scene+ViewController.swift */,
+				C824C6B8203495EE00C3EF91 /* SceneTransitionType.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		C8D7B352202DF80A006C8753 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C8D7B33E202DF409006C8753 /* NewsVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		C8D7B353202DF816006C8753 /* Services */ = {
@@ -111,6 +160,16 @@
 				C8646008202F2B9000167F51 /* ZhihuService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C8D7B354202DF852006C8753 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C824C6B1203493CB00C3EF91 /* StoryCell.swift */,
+				C824C6B32034946B00C3EF91 /* NewsViewModel.swift */,
+				C824C6C1203496CD00C3EF91 /* StoryViewModel.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +251,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
@@ -200,6 +261,8 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
@@ -250,11 +313,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C824C6B6203494DE00C3EF91 /* BindableType.swift in Sources */,
+				C824C6B42034946B00C3EF91 /* NewsViewModel.swift in Sources */,
 				C8646009202F2B9000167F51 /* ZhihuService.swift in Sources */,
-				C8D7B33F202DF409006C8753 /* ViewController.swift in Sources */,
+				C824C6BF203495EE00C3EF91 /* SceneCoordinator.swift in Sources */,
+				C824C6BD203495EE00C3EF91 /* SceneTransitionType.swift in Sources */,
+				C824C6BC203495EE00C3EF91 /* Scene+ViewController.swift in Sources */,
+				C824C6C2203496CD00C3EF91 /* StoryViewModel.swift in Sources */,
+				C8D7B33F202DF409006C8753 /* NewsVC.swift in Sources */,
 				C8D7B33D202DF409006C8753 /* AppDelegate.swift in Sources */,
 				C8800E44202EB9D700DA0961 /* News.swift in Sources */,
 				C8800E42202EB97D00DA0961 /* Story.swift in Sources */,
+				C824C6B2203493CB00C3EF91 /* StoryCell.swift in Sources */,
+				C824C6C0203495EE00C3EF91 /* SceneCoordinatorType.swift in Sources */,
+				C824C6BE203495EE00C3EF91 /* Scene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T28QC3M4TY;
 				INFOPLIST_FILE = ZhihuDaily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kemchenj.ZhihuDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,9 +491,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T28QC3M4TY;
 				INFOPLIST_FILE = ZhihuDaily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kemchenj.ZhihuDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
