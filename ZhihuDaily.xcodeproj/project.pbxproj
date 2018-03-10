@@ -17,6 +17,7 @@
 		C824C6BF203495EE00C3EF91 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6BA203495EE00C3EF91 /* SceneCoordinator.swift */; };
 		C824C6C0203495EE00C3EF91 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6BB203495EE00C3EF91 /* SceneCoordinatorType.swift */; };
 		C824C6C2203496CD00C3EF91 /* StoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824C6C1203496CD00C3EF91 /* StoryViewModel.swift */; };
+		C84DECC8204C07A400CA93C1 /* NewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84DECC7204C07A400CA93C1 /* NewsHeaderView.swift */; };
 		C8646009202F2B9000167F51 /* ZhihuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8646008202F2B9000167F51 /* ZhihuService.swift */; };
 		C8800E42202EB97D00DA0961 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8800E41202EB97D00DA0961 /* Story.swift */; };
 		C8800E44202EB9D700DA0961 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8800E43202EB9D700DA0961 /* News.swift */; };
@@ -40,6 +41,7 @@
 		C824C6BA203495EE00C3EF91 /* SceneCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		C824C6BB203495EE00C3EF91 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		C824C6C1203496CD00C3EF91 /* StoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
+		C84DECC7204C07A400CA93C1 /* NewsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeaderView.swift; sourceTree = "<group>"; };
 		C8646008202F2B9000167F51 /* ZhihuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhihuService.swift; sourceTree = "<group>"; };
 		C8800E41202EB97D00DA0961 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		C8800E43202EB9D700DA0961 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				C824C6B1203493CB00C3EF91 /* StoryCell.swift */,
+				C84DECC7204C07A400CA93C1 /* NewsHeaderView.swift */,
 				C824C6B32034946B00C3EF91 /* NewsViewModel.swift */,
 				C824C6C1203496CD00C3EF91 /* StoryViewModel.swift */,
 			);
@@ -250,20 +253,28 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -323,6 +334,7 @@
 				C8D7B33F202DF409006C8753 /* NewsVC.swift in Sources */,
 				C8D7B33D202DF409006C8753 /* AppDelegate.swift in Sources */,
 				C8800E44202EB9D700DA0961 /* News.swift in Sources */,
+				C84DECC8204C07A400CA93C1 /* NewsHeaderView.swift in Sources */,
 				C8800E42202EB97D00DA0961 /* Story.swift in Sources */,
 				C824C6B2203493CB00C3EF91 /* StoryCell.swift in Sources */,
 				C824C6C0203495EE00C3EF91 /* SceneCoordinatorType.swift in Sources */,

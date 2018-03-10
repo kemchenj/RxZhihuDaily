@@ -24,4 +24,5 @@ import Foundation
 
 enum Scene {
     case news(NewsViewModel)
+    case story(StoryViewModel)
 }

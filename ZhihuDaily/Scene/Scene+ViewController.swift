@@ -33,6 +33,8 @@ extension Scene {
             var vc = nc.viewControllers.first as! NewsVC
             vc.bindViewModel(to: viewModel)
             return nc
+        case let .story(viewModel):
+            return UIViewController()
         }
     }
 }

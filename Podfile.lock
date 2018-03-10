@@ -1,9 +1,19 @@
 PODS:
+  - Action (3.5.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - Alamofire (4.6.0)
   - Differentiator (3.0.2)
   - Kingfisher (4.6.1)
   - MJRefresh (3.1.15.3)
+  - Moya (11.0.1):
+    - Moya/Core (= 11.0.1)
+  - Moya/Core (11.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
   - NSObject+Rx (4.2.0):
     - RxSwift (~> 4.0)
+  - Result (3.2.4)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxDataSources (3.0.2):
@@ -13,22 +23,28 @@ PODS:
   - RxSwift (4.1.2)
 
 DEPENDENCIES:
+  - Action
   - Kingfisher
   - MJRefresh
+  - Moya
   - NSObject+Rx
   - RxCocoa
   - RxDataSources
   - RxSwift
 
 SPEC CHECKSUMS:
+  Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
   NSObject+Rx: cbbc05e3cb3ad446cdbced3e00e39c9efaf02925
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: e49536837d9901277638493ea537394d4b55f570
 
-PODFILE CHECKSUM: fb9111668b9822ec973de5c61bab0cd141fa72c3
+PODFILE CHECKSUM: ef71e23053ef869dce6b8898822f339ba7d9a2e0
 
 COCOAPODS: 1.4.0

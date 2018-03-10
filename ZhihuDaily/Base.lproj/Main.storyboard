@@ -31,26 +31,26 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oIR-Tm-9QR">
-                                                    <rect key="frame" x="281.5" y="10" width="73.5" height="73.5"/>
+                                                    <rect key="frame" x="275.5" y="15" width="84.5" height="63.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="oIR-Tm-9QR" secondAttribute="height" id="vCp-1s-MLy"/>
+                                                        <constraint firstAttribute="width" secondItem="oIR-Tm-9QR" secondAttribute="height" multiplier="4:3" id="vCp-1s-MLy"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXL-9g-mQg">
-                                                    <rect key="frame" x="20" y="10" width="251.5" height="73.5"/>
+                                                    <rect key="frame" x="15" y="15" width="250" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="oIR-Tm-9QR" secondAttribute="bottom" constant="10" id="BnQ-TM-ZXi"/>
-                                                <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="PXL-9g-mQg" secondAttribute="bottom" priority="750" constant="10" id="DaY-dw-coH"/>
-                                                <constraint firstAttribute="trailing" secondItem="oIR-Tm-9QR" secondAttribute="trailing" constant="20" id="Lvq-Jl-ECo"/>
-                                                <constraint firstItem="PXL-9g-mQg" firstAttribute="top" secondItem="rrF-HW-AlH" secondAttribute="top" constant="10" id="aex-At-pk0"/>
-                                                <constraint firstItem="oIR-Tm-9QR" firstAttribute="top" secondItem="rrF-HW-AlH" secondAttribute="top" constant="10" id="qqb-Re-vJf"/>
+                                                <constraint firstItem="PXL-9g-mQg" firstAttribute="top" secondItem="oIR-Tm-9QR" secondAttribute="top" id="9Wp-JM-pYO"/>
+                                                <constraint firstAttribute="bottom" secondItem="oIR-Tm-9QR" secondAttribute="bottom" constant="15" id="BnQ-TM-ZXi"/>
+                                                <constraint firstAttribute="trailing" secondItem="oIR-Tm-9QR" secondAttribute="trailing" constant="15" id="Lvq-Jl-ECo"/>
+                                                <constraint firstItem="PXL-9g-mQg" firstAttribute="height" relation="lessThanOrEqual" secondItem="oIR-Tm-9QR" secondAttribute="height" id="PjA-CA-MsJ"/>
+                                                <constraint firstItem="oIR-Tm-9QR" firstAttribute="top" secondItem="rrF-HW-AlH" secondAttribute="top" constant="15" id="qqb-Re-vJf"/>
                                                 <constraint firstItem="oIR-Tm-9QR" firstAttribute="leading" secondItem="PXL-9g-mQg" secondAttribute="trailing" constant="10" id="sZT-dI-iO5"/>
-                                                <constraint firstItem="PXL-9g-mQg" firstAttribute="leading" secondItem="rrF-HW-AlH" secondAttribute="leading" constant="20" id="ywF-Y9-E3h"/>
+                                                <constraint firstItem="PXL-9g-mQg" firstAttribute="leading" secondItem="rrF-HW-AlH" secondAttribute="leading" constant="15" id="ywF-Y9-E3h"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

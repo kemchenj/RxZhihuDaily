@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct StoryViewModel {
+
+    let coordinator: SceneCoordinator
+
+    init(story: Story, coordinator: SceneCoordinator) {
+        self.coordinator = coordinator
+    }
+}

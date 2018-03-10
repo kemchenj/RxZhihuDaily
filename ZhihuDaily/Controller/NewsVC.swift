@@ -23,9 +23,23 @@ class NewsVC: UIViewController, BindableType {
         let sectionItems = viewModel.sectionItems
             .share(replay: 1, scope: .whileConnected)
 
+        tableView.rx.setDelegate(self)
+            .disposed(by: rx.disposeBag)
+
         sectionItems
             .asDriver(onErrorJustReturn: [])
             .drive(tableView.rx.items(dataSource: dataSource))
+            .disposed(by: rx.disposeBag)
+
+        tableView.rx.modelSelected(Story.self)
+            .flatMap(viewModel.didSelectStory)
+            .asObservable()
+            .
+
+        tableView.rx.itemSelected
+            .subscribe(onNext: { [weak self] idx in
+                self?.tableView.deselectRow(at: idx, animated: true)
+            })
             .disposed(by: rx.disposeBag)
 
         refreshHeader.refreshingBlock = { [weak self] in
@@ -44,19 +58,13 @@ class NewsVC: UIViewController, BindableType {
             .disposed(by: rx.disposeBag)
     }
 
-    var dataSource: RxTableViewSectionedAnimatedDataSource<NewsSection> {
-        let s = RxTableViewSectionedAnimatedDataSource<NewsSection>.init(
-            configureCell: { (dataSource, tableView, idx, story) -> UITableViewCell in
-                let cell = tableView.dequeueReusableCell(withIdentifier: "Story") as! StoryCell
-                cell.configure(with: story)
-                return cell
-            },
-            titleForHeaderInSection: { (dataSource, idx) in
-                return dataSource.sectionModels[idx].model
-            }
-        )
-        return s
-    }
+    let dataSource: RxTableViewSectionedReloadDataSource<NewsSection> = .init(
+        configureCell: { (dataSource, tableView, idx, story) -> UITableViewCell in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Story") as! StoryCell
+            cell.configure(with: story)
+            return cell
+        }
+    )
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,5 +73,32 @@ class NewsVC: UIViewController, BindableType {
         tableView.estimatedRowHeight = 90
         tableView.mj_header = refreshHeader
         tableView.mj_footer = refreshFooter
+        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 56/255, green: 179/255, blue: 245/255, alpha: 1)
+
+        tableView.register(NewsHeaderView.self, forHeaderFooterViewReuseIdentifier: "Header")
+    }
+}
+
+extension NewsVC: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard section > 0 else { return nil }
+
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "Header") as! NewsHeaderView
+
+        let title = dataSource.sectionModels[section].date
+
+        headerView.label.text = title
+
+        return headerView
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.00001
     }
 }
